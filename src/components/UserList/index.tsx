@@ -35,9 +35,9 @@ class UserList extends Component<Props> {
           <>
             <h2>Users</h2>
             <ul>
-              {users.map(r => (
-                <li key={r.id}>
-                  {`${r.name.title} ${r.name.first} ${r.name.last}`}
+              {users.map((user, i) => (
+                <li key={user.login.uuid}>
+                  {`${i}: ${user.name.title} ${user.name.first} ${user.name.last}`}
                 </li>
               ))}
             </ul>

@@ -11,7 +11,9 @@ export enum UsersTypes {
  * Data Types
  */
 export interface User {
-  id: number;
+  login: {
+    uuid: string;
+  };
   name: {
     title: string;
     first: string;
