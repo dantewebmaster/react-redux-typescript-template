@@ -2,11 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
-
 import store from './store';
 import * as serviceWorker from './serviceWorker';
 
-import App from './App';
+// Page components
 import Home from './pages/Home';
 import Repositories from './pages/Repositories';
 import Users from './pages/Users';
@@ -16,8 +15,7 @@ ReactDOM.render(
   <Provider store={store}>
     <Router>
       <Switch>
-        <Route exact path="/" component={App} />
-        <Route path="/home" component={Home} />
+        <Route exact path="/" component={Home} />
         <Route path="/users" component={Users} />
         <Route path="/repositories" component={Repositories} />
         <Route component={NotFound} />
