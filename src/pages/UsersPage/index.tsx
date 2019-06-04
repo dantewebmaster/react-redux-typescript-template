@@ -6,7 +6,7 @@ import { AppState } from '../../store';
 import { Props } from '../../models/users.interface';
 import * as UsersActions from '../../store/ducks/users/actions';
 
-class Users extends Component<Props> {
+class UsersPage extends Component<Props> {
   componentDidMount() {
     const { loadRequest } = this.props;
 
@@ -51,4 +51,4 @@ function mapDispatchToProps(dispatch: Dispatch) {
   return bindActionCreators(UsersActions, dispatch);
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Users);
+export default connect(mapStateToProps, mapDispatchToProps)(UsersPage);

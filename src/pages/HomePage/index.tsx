@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Home() {
+export default function HomePage() {
   return (
     <div className="home">
-      <h1>Home</h1>
+      <h1>Welcome to React</h1>
       <hr />
       <Link to="/repositories">
         <h2>Link to repositories container</h2>

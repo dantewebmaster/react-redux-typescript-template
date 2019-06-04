@@ -6,7 +6,7 @@ import { AppState } from '../../store';
 import { Props } from '../../models/repositories.interface';
 import * as RepositoriesActions from '../../store/ducks/repositories/actions';
 
-class Repositories extends Component<Props> {
+class RepositoriesPage extends Component<Props> {
   componentDidMount() {
     const { loadRequest } = this.props;
 
@@ -46,4 +46,4 @@ function mapDispatchToProps(dispatch: Dispatch) {
   return bindActionCreators(RepositoriesActions, dispatch);
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Repositories);
+export default connect(mapStateToProps, mapDispatchToProps)(RepositoriesPage);
