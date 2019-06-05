@@ -9,21 +9,21 @@ Initial template to start a project with *React + Redux + Redux Saga* using Type
 ```bash
 src
 ├─── components            # All the Views/Presentational components organized by folders (ComponentName/index.tsx)
-│    ├─── RepositoryList
-│    ├─── Root
-│    └─── UserList
-├─── models
+│    ├─── RepositoryList   # Example view component
+│    ├─── Root             # Component used as start point for the application, initialize the Redux configs
+│    └─── UserList         # Example view component
+├─── models                # Folder containing all the application interfaces
 ├─── pages                 # Page components are used to isolate the logic components from presentational ones
-│    ├─── HomePage
-│    ├─── NotFoundPage
-│    ├─── RepositoriesPage 
-│    └─── UsersPage
+│    ├─── HomePage         # Page component example
+│    ├─── NotFoundPage     # Page component example
+│    ├─── RepositoriesPage # Page component example
+│    └─── UsersPage        # Page component example
 ├─── services              # All the API calls are placed here (each service on a specific file)
-├─── store
+├─── store                 # Contains all the core structure for the Redux store
 │    └─── ducks
-│        ├─── repositories
-│        └─── users
-└─── __tests__
+│        ├─── repositories # Holds all specific reducer files, actions, types, sagas and reducers (index.ts)
+│        └─── users        # Holds all specific reducer files, actions, types, sagas and reducers (index.ts)
+└─── __tests__             # Tests folder have all unit test
 ```
 
 ## Test

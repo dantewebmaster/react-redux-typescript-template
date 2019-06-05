@@ -1,9 +1,9 @@
-import { call, put } from 'redux-saga/effects';
+import { call, put,  } from 'redux-saga/effects';
 import api from '../../../services/users.service';
-
 import { loadSuccess, loadFailure } from './actions';
+import { SagaIterator } from '@redux-saga/core';
 
-export function* loadUsers() {
+export function* loadUsers(): SagaIterator {
   try {
     const response = yield call(api.get, '?results=30&nat=br,us');
 
