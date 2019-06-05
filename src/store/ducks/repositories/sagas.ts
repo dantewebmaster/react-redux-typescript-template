@@ -1,5 +1,5 @@
 import { call, put } from 'redux-saga/effects';
-import api from '../../../services/github';
+import api from '../../../services/github.service';
 
 import { loadSuccess, loadFailure } from './actions';
 

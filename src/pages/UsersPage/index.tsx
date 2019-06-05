@@ -16,7 +16,7 @@ class UsersPage extends Component<Props> {
   render() {
     const {
       users, loading, error, history,
-    } = this.props;
+    }: Props = this.props;
     return (
       <>
         {loading && <p>Loading...</p>}

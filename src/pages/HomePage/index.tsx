@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function HomePage() {
   return (
-    <div className="home">
+    <div className="home-page">
       <h1>Welcome to React</h1>
       <hr />
       <Link to="/repositories">
