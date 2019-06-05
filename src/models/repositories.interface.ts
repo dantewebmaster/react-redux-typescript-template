@@ -4,6 +4,9 @@ interface StateProps {
   repositories: Repository[];
   loading: boolean;
   error: boolean;
+  history: {
+    goBack: Function;
+  };
 }
 
 interface DispatchProps {

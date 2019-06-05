@@ -8,17 +8,17 @@ Initial template to start a project with *React + Redux + Redux Saga* using Type
 ## Folder Structure
 ```bash
 src
-├─── components
+├─── components             # All the Views/Presentational components organized by folders (ComponentName/index.tsx)
 │    ├─── RepositoryList
 │    ├─── Root
 │    └─── UserList
 ├─── models
-├─── pages
+├─── pages                  # Page components are used to isolate the logic components from presentational ones
 │    ├─── HomePage
 │    ├─── NotFoundPage
 │    ├─── RepositoriesPage
 │    └─── UsersPage
-├─── services
+├─── services               # All the logic that makes API calls and configure requests (each service have his own file)
 ├─── store
 │    └─── ducks
 │        ├─── repositories
