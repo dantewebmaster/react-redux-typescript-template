@@ -16,7 +16,7 @@ class RepositoriesPage extends Component<Props> {
   render() {
     const {
       repositories, loading, error, history,
-    } = this.props;
+    }: Props = this.props;
     return (
       <>
         {loading && <p>Loading...</p>}
