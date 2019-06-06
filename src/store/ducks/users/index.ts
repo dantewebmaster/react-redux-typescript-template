@@ -21,6 +21,10 @@ const reducer: Reducer<UsersState> = (state = INITIAL_STATE, action) => {
       return {
         ...state, loading: false, error: action.payload.error, data: INITIAL_STATE.data,
       };
+    case UsersTypes.RESET_STORE:
+      return {
+        ...INITIAL_STATE,
+      };
     default:
       return state;
   }

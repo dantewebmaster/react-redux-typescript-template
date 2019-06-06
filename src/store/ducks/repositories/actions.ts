@@ -9,3 +9,9 @@ export const loadSuccess = (data: Repository[]) => action(
 );
 
 export const loadFailure = () => action(RepositoriesTypes.LOAD_FAILURE);
+
+export const resetStore = (payload: string[]) => action(
+  RepositoriesTypes.RESET_STORE,
+  payload,
+);
+

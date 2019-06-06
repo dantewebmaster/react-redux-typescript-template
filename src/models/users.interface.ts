@@ -11,7 +11,7 @@ interface StateProps {
 
 interface DispatchProps {
   loadRequest(): void;
-  resetStore(payload: string[]): void;
+  resetStore(payload?: string[]): void;
 }
 
 export type Props = StateProps & DispatchProps;

@@ -14,6 +14,12 @@ class RepositoriesPage extends Component<Props> {
     loadRequest();
   }
 
+  componentWillUnmount() {
+    const { resetStore } = this.props;
+
+    resetStore();
+  }
+
   render() {
     const {
       repositories, loading, error, history,
