@@ -5,6 +5,7 @@ import { bindActionCreators, Dispatch } from 'redux';
 import { AppState } from '../../store';
 import { Props } from '../../models/repositories.interface';
 import * as RepositoriesActions from '../../store/ducks/repositories/actions';
+import RepositoryList from '../../components/RepositoryList';
 
 class RepositoriesPage extends Component<Props> {
   componentDidMount() {
@@ -24,11 +25,7 @@ class RepositoriesPage extends Component<Props> {
         {repositories.length > 0 && (
           <>
             <h2>Repositories</h2>
-            <ul>
-              {repositories.map((repo, i) => (
-                <li key={repo.id}>{`${i}: ${repo.name}`}</li>
-              ))}
-            </ul>
+            <RepositoryList data={repositories} />
             <button type="button" onClick={() => history.goBack()}>Go Back</button>
           </>
         )}

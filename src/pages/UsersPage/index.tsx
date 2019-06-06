@@ -5,6 +5,7 @@ import { bindActionCreators, Dispatch } from 'redux';
 import { AppState } from '../../store';
 import { Props } from '../../models/users.interface';
 import * as UsersActions from '../../store/ducks/users/actions';
+import UserList from '../../components/UserList';
 
 class UsersPage extends Component<Props> {
   componentDidMount() {
@@ -30,13 +31,7 @@ class UsersPage extends Component<Props> {
         {users.length > 0 && (
           <>
             <h2>Users</h2>
-            <ul>
-              {users.map((user, i) => (
-                <li key={user.login.uuid}>
-                  {`${i}: ${user.name.title} ${user.name.first} ${user.name.last}`}
-                </li>
-              ))}
-            </ul>
+            <UserList data={users} />
             <button type="button" onClick={() => history.goBack()}>Go Back</button>
           </>
         )}
