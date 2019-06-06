@@ -20,7 +20,7 @@ src
 │    └─── UsersPage        # Page component example
 ├─── services              # All the API calls are placed here (each service on a specific file)
 ├─── store                 # Contains all the core structure for the Redux store
-│    └─── ducks
+│    └─── ducks            # Redux features/ducks main folder
 │        ├─── repositories # Holds all specific reducer files, actions, types, sagas and reducers (index.ts)
 │        └─── users        # Holds all specific reducer files, actions, types, sagas and reducers (index.ts)
 └─── __tests__             # Tests folder have all unit test
@@ -30,4 +30,4 @@ src
 Use `npm/yarn run test` to start the basic test.
 
 ## Changelog
-- Initial Version
+- Initial Version: 1.0.0
