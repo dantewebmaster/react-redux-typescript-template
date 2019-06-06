@@ -13,6 +13,12 @@ class UsersPage extends Component<Props> {
     loadRequest();
   }
 
+  componentWillUnmount() {
+    const { resetStore } = this.props;
+
+    resetStore(['data', 'error']);
+  }
+
   render() {
     const {
       users, loading, error, history,

@@ -14,7 +14,9 @@ class RepositoriesPage extends Component<Props> {
   }
 
   render() {
-    const { repositories, loading, error } = this.props;
+    const {
+      repositories, loading, error, history,
+    } = this.props;
     return (
       <>
         {loading && <p>Loading...</p>}
@@ -27,6 +29,7 @@ class RepositoriesPage extends Component<Props> {
                 <li key={repo.id}>{`${i}: ${repo.name}`}</li>
               ))}
             </ul>
+            <button type="button" onClick={() => history.goBack()}>Go Back</button>
           </>
         )}
       </>

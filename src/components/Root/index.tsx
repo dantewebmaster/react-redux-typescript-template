@@ -1,7 +1,7 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Provider } from 'react-redux'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import React from 'react';
+import { Store } from 'redux';
+import { Provider } from 'react-redux';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // Pages
 import UsersPage from '../../pages/UsersPage';
 import RepositoriesPage from '../../pages/RepositoriesPage';
@@ -9,11 +9,10 @@ import NotFoundPage from '../../pages/NotFoundPage';
 import HomePage from '../../pages/HomePage';
 
 interface Props {
-  store: any;
+  store: Store;
 }
 
-// const Root: React.FC<Props> = ({ store }) => (
-const Root = ({ store } : Props) => (
+const Root = ({ store }: Props) => (
   <Provider store={store}>
     <Router>
       <Switch>
@@ -24,10 +23,6 @@ const Root = ({ store } : Props) => (
       </Switch>
     </Router>
   </Provider>
-)
+);
 
-Root.propTypes = {
-  store: PropTypes.object.isRequired,
-}
-
-export default Root
+export default Root;

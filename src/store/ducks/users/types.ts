@@ -5,6 +5,7 @@ export enum UsersTypes {
   LOAD_REQUEST = '@users/LOAD_REQUEST',
   LOAD_SUCCESS = '@users/LOAD_SUCCESS',
   LOAD_FAILURE = '@users/LOAD_FAILURE',
+  RESET_STORE = '@users/RESET_STORE',
 }
 
 /**
