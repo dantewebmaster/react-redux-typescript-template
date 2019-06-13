@@ -1,7 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { isEmpty } from '../../helpers/isEmpty';
 
 export default function HomePage() {
+  const test: any = {};
+
+  console.log('Testing isEmpty helper:', isEmpty(test));
+
   return (
     <div className="home-page">
       <h1>Welcome to React</h1>

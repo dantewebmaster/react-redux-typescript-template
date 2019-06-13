@@ -19,6 +19,7 @@ src
 │    ├─── RepositoriesPage # Page component example
 │    └─── UsersPage        # Page component example
 ├─── services              # All the API calls are placed here (each service on a specific file)
+├─── helpers               # Reusable Helpers and Utilities
 ├─── store                 # Contains all the core structure for the Redux store
 │    └─── ducks            # Redux features/ducks main folder
 │        ├─── repositories # Holds all specific reducer files, actions, types, sagas and reducers (index.ts)
