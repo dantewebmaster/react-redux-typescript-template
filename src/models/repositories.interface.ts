@@ -14,4 +14,4 @@ interface DispatchProps {
   resetStore(payload?: string[]): void;
 }
 
-export type Props = StateProps & DispatchProps;
+export type RepositoriesProps = StateProps & DispatchProps;

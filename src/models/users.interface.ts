@@ -4,7 +4,7 @@ interface StateProps {
   users: User[];
   loading: boolean;
   error: string;
-  history: {
+  history?: {
     goBack: Function;
   };
 }
@@ -14,4 +14,4 @@ interface DispatchProps {
   resetStore(payload?: string[]): void;
 }
 
-export type Props = StateProps & DispatchProps;
+export type UsersProps = StateProps & DispatchProps;

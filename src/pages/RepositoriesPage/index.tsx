@@ -3,11 +3,11 @@ import { connect } from 'react-redux';
 import { bindActionCreators, Dispatch } from 'redux';
 
 import { AppState } from '../../store';
-import { Props } from '../../models/repositories.interface';
+import { RepositoriesProps } from '../../models/repositories.interface';
 import * as RepositoriesActions from '../../store/ducks/repositories/actions';
 import RepositoryList from '../../components/RepositoryList';
 
-class RepositoriesPage extends Component<Props> {
+class RepositoriesPage extends Component<RepositoriesProps> {
   componentDidMount() {
     const { loadRequest } = this.props;
 
@@ -23,7 +23,7 @@ class RepositoriesPage extends Component<Props> {
   render() {
     const {
       repositories, loading, error, history,
-    }: Props = this.props;
+    }: RepositoriesProps = this.props;
     return (
       <>
         {loading && <p>Loading...</p>}
