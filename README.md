@@ -24,7 +24,7 @@ src
 │    └─── ducks            # Redux features/ducks main folder
 │        ├─── repositories # Holds all specific reducer files, actions, types, sagas and reducers (index.ts)
 │        └─── users        # Holds all specific reducer files, actions, types, sagas and reducers (index.ts)
-└─── __tests__             # Tests folder have all unit test
+└─── __tests__             # Tests folder have all unit test, have the same ./src folder structure
 ```
 
 ## Test
