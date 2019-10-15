@@ -1,5 +1,6 @@
 # React Redux Typescript Template
-Initial template to start a project with *React + Redux + Redux Saga* using Typescript.
+Initial template to start a project with *React + Redux + Redux Saga* using Typescript.  
+This architecture uses the duck pattern to organise the store, Typescript for static typing, Redux for global state management, Redux Saga to deal with side efects and follows the Statefull/Stateless components structure.
 
 ## Start project
 `npm/yarn install` to install all packages  
@@ -27,8 +28,10 @@ src
 └─── __tests__             # Tests folder have all unit test, have the same ./src folder structure
 ```
 
-## Test
-Use `npm/yarn run test` to start the basic test.
+## Testing
+Use `npm/yarn run test` to start the basic test.  
+
+The tests follows the same folder structure of the main app with files named as **.test.tsx**. There is a initial component with tests as an example.
 
 ## Changelog
 - Initial Version: 1.0.0
