@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+
+html, body, #root {
+  min-height: 100%;
+}
+
+body, button {
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  background-color: #d7d7d7;
+  padding: 8px 16px;
+  margin: 6px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.btn-large {
+  min-width: 200px;
+}
+
+.bg-primary {
+  background-color: rgb(116, 104, 226);
+  color: #fff;
+}
