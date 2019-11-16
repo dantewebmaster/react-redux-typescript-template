@@ -22,9 +22,7 @@ const reducer: Reducer<RepositoriesState> = (state = INITIAL_STATE, action) => {
         ...state, loading: false, error: true, data: INITIAL_STATE.data,
       };
     case RepositoriesTypes.RESET_STORE:
-      return {
-        ...INITIAL_STATE,
-      };
+      return INITIAL_STATE;
     default:
       return state;
   }
