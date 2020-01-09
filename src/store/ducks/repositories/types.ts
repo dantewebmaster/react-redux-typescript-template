@@ -22,5 +22,5 @@ export interface Repository {
 export interface RepositoriesState {
   readonly data: Repository[];
   readonly loading: boolean;
-  readonly error: boolean;
+  readonly error: string;
 }

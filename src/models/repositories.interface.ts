@@ -3,7 +3,7 @@ import { Repository } from '../store/ducks/repositories/types';
 interface StateProps {
   repositories: Repository[];
   loading: boolean;
-  error: boolean;
+  error: string;
   history: {
     goBack: Function;
   };

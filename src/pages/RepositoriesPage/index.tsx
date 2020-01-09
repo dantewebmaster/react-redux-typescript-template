@@ -27,7 +27,7 @@ class RepositoriesPage extends Component<RepositoriesProps> {
     return (
       <>
         {loading && <p>Loading...</p>}
-        {error && <p>Deu pau...</p>}
+        {error && <p>{error}</p>}
         {repositories.length > 0 && (
           <>
             <h2>Repositories</h2>

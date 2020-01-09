@@ -1,7 +1,9 @@
 import axios from 'axios';
 
-const api = axios.create({
+export const githubApi = axios.create({
   baseURL: 'https://api.github.com',
 });
 
-export default api;
+export function getRepositories() {
+  return githubApi.get('users/dantewebmaster/repos');
+}
